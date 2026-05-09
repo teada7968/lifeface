@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生活美学志 | 分享美好生活</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🌸 生活美学志</h1>
+                <p class="logo-sub">分享美好·遇见生活</p>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="active">首页</a>
+                <a href="articles.html">发现</a>
+                <a href="submit.html">投稿</a>
+                <a href="login.html" id="userNavBtn">登录</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主视觉 Banner（优化的广告位1：顶部，不突兀） -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>发现生活的小美好</h2>
+            <p>美妆 · 穿搭 · 旅行 · 知识 · 生活服务</p>
+            <button class="btn-primary" onclick="location.href='articles.html'">探索更多 →</button>
+        </div>
+        <!-- 顶部广告位 - 优雅融入背景 -->
+        <div class="ad-spot ad-hero" data-ad-id="hero-banner">
+            <span class="ad-label">精选推荐</span>
+            <div class="ad-content">✨ 春风有信，花开有期 | 春季限定好物推荐 ✨</div>
+        </div>
+    </section>
+
+    <!-- 分类导航 -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">探索分类</h2>
+            <div class="category-grid">
+                <div class="category-card" data-cat="life">🏠 生活服务</div>
+                <div class="category-card" data-cat="knowledge">📚 知识分享</div>
+                <div class="category-card" data-cat="beauty">💄 美妆</div>
+                <div class="category-card" data-cat="fashion">👗 穿搭</div>
+                <div class="category-card" data-cat="travel">✈️ 旅行</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新推荐 -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-header">
+                <h2 class="section-title">最新推荐</h2>
+                <a href="articles.html" class="more-link">查看全部 →</a>
+            </div>
+            <div class="articles-grid" id="articlesGrid">
+                <!-- 文章会通过JS动态加载 -->
+            </div>
+        </div>
+        
+        <!-- 侧边广告位2：自然融入 -->
+        <div class="ad-spot ad-sidebar" data-ad-id="sidebar-native">
+            <span class="ad-label">赞助内容</span>
+            <div class="ad-content">📖 本周热读：《极简生活指南》限时免费试读 →</div>
+        </div>
+    </main>
+
+    <!-- 内容间广告位3：精致卡片形式 -->
+    <div class="ad-spot ad-inline" data-ad-id="inline-card">
+        <span class="ad-label">推荐</span>
+        <div class="ad-content">🎁 会员专属福利 | 每日精选好物榜单，点击查看详情 →</div>
+    </div>
+
+    <!-- 社区精选 -->
+    <section class="community">
+        <div class="container">
+            <h2 class="section-title">✨ 社区精选 ✨</h2>
+            <div class="community-grid" id="communityGrid">
+                <!-- 用户审核通过的内容 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部广告位4：页脚自然位置 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>生活美学志</h3>
+                    <p>记录生活，分享热爱</p>
+                    <p class="copyright">© 2025 生活美学志 | 所有内容归原作者所有</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">关于我们</a>
+                    <a href="#">投稿指南</a>
+                    <a href="#">合作联系</a>
+                    <a href="#">隐私政策</a>
+                </div>
+            </div>
+            <!-- 底部广告位 -->
+            <div class="ad-spot ad-footer" data-ad-id="footer-banner">
+                <span class="ad-label">广告</span>
+                <div class="ad-content">🌟 发现更多美好 → 下载App 每日更新优质内容 🌟</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

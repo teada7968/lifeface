@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投稿分享 | 生活美学志</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🌸 生活美学志</h1>
+            </div>
+            <nav class="nav">
+                <a href="index.html">首页</a>
+                <a href="articles.html">发现</a>
+                <a href="submit.html" class="active">投稿</a>
+                <a href="login.html">登录</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="submit-container">
+                <div class="submit-header">
+                    <h2>✨ 分享你的故事 ✨</h2>
+                    <p>你的内容将经过审核后展示给社区，让更多人看到你的热爱</p>
+                </div>
+
+                <form id="submitForm" class="submit-form">
+                    <div class="form-group">
+                        <label for="title">标题 *</label>
+                        <input type="text" id="title" name="title" required placeholder="给文章起一个吸引人的标题">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">分类 *</label>
+                        <select id="category" name="category" required>
+                            <option value="">请选择分类</option>
+                            <option value="life">🏠 生活服务</option>
+                            <option value="knowledge">📚 知识分享</option>
+                            <option value="beauty">💄 美妆</option>
+                            <option value="fashion">👗 穿搭</option>
+                            <option value="travel">✈️ 旅行</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="summary">简介 *</label>
+                        <textarea id="summary" name="summary" rows="3" required placeholder="简单介绍一下你的内容..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="content">内容 *</label>
+                        <textarea id="content" name="content" rows="10" required placeholder="详细分享你的经验、心得或故事..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="author">昵称 *</label>
+                        <input type="text" id="author" name="author" required placeholder="你希望展示的名称">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="coverImage">封面图URL（选填）</label>
+                        <input type="url" id="coverImage" name="coverImage" placeholder="https://... 图片链接">
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">提交审核</button>
+                        <button type="reset" class="btn-secondary">清空重填</button>
+                    </div>
+                </form>
+
+                <div class="submit-note">
+                    <p>📝 投稿须知：</p>
+                    <ul>
+                        <li>所有投稿将经过人工审核，审核通过后会在社区展示</li>
+                        <li>请确保内容真实、原创、不包含违规信息</li>
+                        <li>审核时间通常为1-2个工作日</li>
+                        <li>优质内容将获得首页推荐机会</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 侧边广告位 -->
+        <div class="ad-spot ad-sidebar" data-ad-id="submit-sidebar">
+            <span class="ad-label">热门话题</span>
+            <div class="ad-content">🔥 本周热门：#春季穿搭挑战赛 快来参与！</div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© 2025 生活美学志 | 分享你的美好生活</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
