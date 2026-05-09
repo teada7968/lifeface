@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所有文章 | 生活美学志</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🌸 生活美学志</h1>
+            </div>
+            <nav class="nav">
+                <a href="index.html">首页</a>
+                <a href="articles.html" class="active">发现</a>
+                <a href="submit.html">投稿</a>
+                <a href="login.html" id="userNavBtn2">登录</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="articles-header">
+                <h2>全部文章</h2>
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="life">生活服务</button>
+                    <button class="filter-btn" data-filter="knowledge">知识分享</button>
+                    <button class="filter-btn" data-filter="beauty">美妆</button>
+                    <button class="filter-btn" data-filter="fashion">穿搭</button>
+                    <button class="filter-btn" data-filter="travel">旅行</button>
+                </div>
+            </div>
+            <div class="articles-list" id="articlesList">
+                <!-- 文章列表动态加载 -->
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚广告位 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="ad-spot ad-footer" data-ad-id="footer-banner-articles">
+                <span class="ad-label">推广</span>
+                <div class="ad-content">📸 分享你的生活瞬间，有机会获得首页推荐 → 立即投稿</div>
+            </div>
+            <p class="copyright">© 2025 生活美学志</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

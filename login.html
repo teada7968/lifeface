@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录/注册 | 生活美学志</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🌸 生活美学志</h1>
+            </div>
+            <nav class="nav">
+                <a href="index.html">首页</a>
+                <a href="articles.html">发现</a>
+                <a href="submit.html">投稿</a>
+                <a href="login.html" class="active">登录</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">登录</button>
+                <button class="auth-tab" data-tab="register">注册</button>
+            </div>
+
+            <!-- 登录表单 -->
+            <form id="loginForm" class="auth-form active">
+                <div class="form-group">
+                    <label for="loginEmail">邮箱</label>
+                    <input type="email" id="loginEmail" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">密码</label>
+                    <input type="password" id="loginPassword" required placeholder="至少6位">
+                </div>
+                <button type="submit" class="btn-primary btn-block">登录</button>
+                <p class="auth-note">登录即表示同意《用户协议》和《隐私政策》</p>
+            </form>
+
+            <!-- 注册表单 -->
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="regName">昵称</label>
+                    <input type="text" id="regName" required placeholder="2-10个字符">
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">邮箱</label>
+                    <input type="email" id="regEmail" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">密码</label>
+                    <input type="password" id="regPassword" required placeholder="至少6位">
+                </div>
+                <div class="form-group">
+                    <label for="regConfirm">确认密码</label>
+                    <input type="password" id="regConfirm" required>
+                </div>
+                <button type="submit" class="btn-primary btn-block">注册新账号</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
